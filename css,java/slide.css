@@ -1,0 +1,41 @@
+.home {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .img-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .img-slide.active {
+    opacity: 1;
+  }
+  
+  /* Styles for the navigation buttons */
+  .slider-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .nav-btn {
+    width: 10px;
+    height: 10px;
+    background-color: #aaa;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .nav-btn.active {
+    background-color: #333;
+  }

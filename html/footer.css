@@ -1,0 +1,63 @@
+footer {
+    background-color: #333; /* Dark blue background color */
+    color: #fff; /* Text color for links and content */
+    padding: 20px 0; /* Add padding to the top and bottom of the footer */
+  }
+  
+  .footer-container {
+    max-width: 1200px; /* Set a maximum width for the footer content */
+    margin: 0 auto; /* Center the footer content horizontally */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    justify-content: space-between; /* Distribute the elements evenly */
+  }
+  
+  /* Styles for the Navigation Links */
+  .footer-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-nav li {
+    margin-right: 15px; /* Add spacing between navigation items */
+  }
+  
+  .footer-nav a {
+    color: #fff; /* Link text color */
+    text-decoration: none;
+  }
+  
+  /* Styles for the Left and Right Sections */
+  .footer-left,
+  .footer-right {
+    width: 45%; /* Set the width for the left and right sections */
+  }
+  
+  /* Styles for the Email Subscription Form */
+  .footer-right form {
+    display: flex; /* Use flexbox for form layout */
+  }
+  
+  .footer-right input[type="email"] {
+    flex: 1; /* Allow the input to expand to fill available space */
+    padding: 5px; /* Add padding to the input field */
+    margin-right: 5px; /* Add spacing between the input and the submit button */
+  }
+  
+  .footer-right input[type="submit"] {
+    background-color: #fff; /* White background color for the submit button */
+    color: #333; /* Text color for the submit button */
+    border: none; /* Remove default button border */
+    padding: 5px 10px; /* Add padding to the submit button */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+  }
+  
+  /* Media query for responsiveness (adjust as needed) */
+  @media screen and (max-width: 768px) {
+    .footer-left,
+    .footer-right {
+      width: 100%; /* Full width on small screens */
+    }
+  }
